@@ -1,8 +1,7 @@
 package testClasses;
 
-import org.testng.AssertJUnit;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import appcode.SomeClassToTest;
 
 public class TestNG_Asserts {
@@ -12,7 +11,7 @@ public class TestNG_Asserts {
 		System.out.println("\nRunning Test -> testSum");
 		SomeClassToTest obj = new SomeClassToTest();
 		int result = obj.sumNumbers(1, 2);
-		AssertJUnit.assertEquals(result, 3);
+		Assert.assertEquals(result, 3);
 	}
 	
 	@Test
@@ -21,7 +20,7 @@ public class TestNG_Asserts {
 		String expectedString = "Hello World";
 		SomeClassToTest obj = new SomeClassToTest();
 		String result = obj.addStrings("Hello", "World");
-		AssertJUnit.assertEquals(result, expectedString);
+		Assert.assertEquals(result, expectedString);
 	}
 	
 	@Test
@@ -30,7 +29,7 @@ public class TestNG_Asserts {
 		int[] expectedArray = {1, 2, 3, 4};
 		SomeClassToTest obj = new SomeClassToTest();
 		int[] result = obj.getArray();
-		AssertJUnit.assertEquals(result, expectedArray);
+		Assert.assertEquals(result, expectedArray);
 		System.out.println("\nEnd Test -> testArrays");
 	}
 }
