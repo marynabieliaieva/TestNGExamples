@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-public class TestNG_ListenersTest1 {
+public class TestNG_ListenersTest2 {
   
   @BeforeClass
   public void setUp() {
